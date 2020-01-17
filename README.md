@@ -42,12 +42,15 @@ Edit this document to include your answers after each question. Make sure to lea
   inline elements do not push other elements down a line.
 
 3. What are the 4 areas of the box model?
+
   content, padding, border, margin
 
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+
   this will center items along the cross axis unless the flex direction has been changed
 
 5. Explain why git is valuable to a team of developers.
+
   git allows for version control; you can create your own branch of a repository and work on it as normal, then push and merge when your task is complete.
   or you can pull older versions in case something horrible has happened.
 
