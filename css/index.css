@@ -185,10 +185,10 @@ footer nav a {
 
 h2, p { margin: 15px 0; }
 
-img { padding: 0;}
+.center-grid img { width: 100%; }
 
 .plan, .work, .places, .collab {
-    width: 370px;
+    width: 46%;
     margin: 20px auto;
     padding-bottom: 20px;
     border-bottom: 1px dashed black;
