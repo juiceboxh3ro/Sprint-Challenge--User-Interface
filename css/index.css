@@ -25,31 +25,26 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
+footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html, body {
     height: 100%;
@@ -62,13 +57,43 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
-p {
-    line-height: 1.4;
-}
+p { line-height: 1.4; }
 
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+/* End Lambda Reset */
+
+/* Nav Bar */
+nav {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 35px auto;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 80%;
+}
+
+.nav-right a {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 30px;
+    color: black;
+}
+
+/* Splash Image */
+.splash-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
 }
 
 .top-content {
@@ -118,13 +143,9 @@ p {
     justify-content: space-around;
 }
 
-.bottom-content .text-container {
-    padding-right: 4%;
-}
+.bottom-content .text-container { padding-right: 4%; }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
+.bottom-content .text-container:last-child { padding-right: 0; }
 
 footer {
     width: 100%;
@@ -132,15 +153,108 @@ footer {
 }
 
 footer nav {
-    width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
 }
 
 footer nav a {
+    padding-right: 9%;
     color: white;
     text-decoration: none;
+}
+
+/* About Page */
+
+.about {
+    margin: 0 15px;
+    padding-bottom: 20px;
+}
+
+.center-grid {
+    width: 100%;
+    border-top: 1px dashed black;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-flow: wrap;
+}
+
+h2, p { margin: 15px 0; }
+
+img { padding: 0;}
+
+.plan, .work, .places, .collab {
+    width: 370px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.learn-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    width: 45%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bottom-section {
+    margin: 0 15px;
+    padding-bottom: 20px;
+}
+
+/* Colorful Boxes */
+
+.middle-content .boxes .box:nth-child(1) { background-color: teal; } 
+.middle-content .boxes .box:nth-child(2) { background-color: gold; } 
+.middle-content .boxes .box:nth-child(3) { background-color: cadetblue; } 
+.middle-content .boxes .box:nth-child(4) { background-color: coral; } 
+.middle-content .boxes .box:nth-child(5) { background-color: crimson; } 
+.middle-content .boxes .box:nth-child(6) { background-color: forestgreen; } 
+.middle-content .boxes .box:nth-child(7) { background-color: darkorchid; } 
+.middle-content .boxes .box:nth-child(8) { background-color: hotpink; } 
+.middle-content .boxes .box:nth-child(9) { background-color: indigo; } 
+.middle-content .boxes .box:nth-child(10) { background-color: dodgerblue; }
+
+/* Stretch Objective - Animations */
+
+.middle-content .boxes .box { transition: 0.3s ease-in; }
+
+.middle-content .boxes .box:hover {
+    transform: scale(1.1) rotate(360deg);
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+.plan img,
+.work img,
+.places img,
+.collab img { transition: 0.3s ease-in; }
+
+.plan img:hover,
+.work img:hover,
+.places img:hover,
+.collab img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.learn-btn { transition: 0.3s ease-in-out; }
+.learn-btn:hover {
+    cursor: pointer;
+    background: black;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.lambda-logo { transition: 0.3s }
+
+.lambda-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
