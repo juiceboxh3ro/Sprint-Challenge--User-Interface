@@ -136,7 +136,7 @@ nav {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    /* background: black; */
+    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -223,33 +223,48 @@ img { padding: 0;}
 
 /* Colorful Boxes */
 
-.box:nth-child(1) {
-    background-color: teal;
-} 
-.box:nth-child(2) {
-    background-color: gold;
-} 
-.box:nth-child(3) {
-    background-color: cadetblue;
-} 
-.box:nth-child(4) {
-    background-color: coral;
-} 
-.box:nth-child(5) {
-    background-color: crimson;
-} 
-.box:nth-child(6) {
-    background-color: forestgreen;
-} 
-.box:nth-child(7) {
-    background-color: darkorchid;
-} 
-.box:nth-child(8) {
-    background-color: hotpink;
-} 
-.box:nth-child(9) {
-    background-color: indigo;
-} 
-.box:nth-child(10) {
-    background-color: dodgerblue;
-} 
+.middle-content .boxes .box:nth-child(1) { background-color: teal; } 
+.middle-content .boxes .box:nth-child(2) { background-color: gold; } 
+.middle-content .boxes .box:nth-child(3) { background-color: cadetblue; } 
+.middle-content .boxes .box:nth-child(4) { background-color: coral; } 
+.middle-content .boxes .box:nth-child(5) { background-color: crimson; } 
+.middle-content .boxes .box:nth-child(6) { background-color: forestgreen; } 
+.middle-content .boxes .box:nth-child(7) { background-color: darkorchid; } 
+.middle-content .boxes .box:nth-child(8) { background-color: hotpink; } 
+.middle-content .boxes .box:nth-child(9) { background-color: indigo; } 
+.middle-content .boxes .box:nth-child(10) { background-color: dodgerblue; }
+
+/* Stretch Objective - Animations */
+
+.middle-content .boxes .box { transition: 0.3s ease-in; }
+
+.middle-content .boxes .box:hover {
+    transform: scale(1.1) rotate(360deg);
+    opacity: 0.8;
+    border-radius: 150px;
+}
+
+.plan img, .work img, .places img, .collab img { transition: 0.3s ease-in; }
+
+.plan img:hover,
+.work img:hover,
+.places img:hover,
+.collab img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.learn-btn { transition: 0.3s ease-in-out; }
+.learn-btn:hover {
+    cursor: pointer;
+    background: black;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.lambda-logo { transition: 0.3s }
+
+.lambda-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
