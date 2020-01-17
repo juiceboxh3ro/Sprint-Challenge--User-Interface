@@ -71,6 +71,38 @@ p {
     margin: 0 auto;
 }
 
+/* End Lambda Reset */
+
+/* Nav Bar */
+nav {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 35px auto;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 80%;
+}
+
+.nav-right a {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 30px;
+    color: black;
+}
+
+/* Splash Image */
+.splash-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -132,15 +164,59 @@ footer {
 }
 
 footer nav {
-    width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
 }
 
 footer nav a {
+    padding-right: 9%;
     color: white;
     text-decoration: none;
+}
+
+/* About Page */
+
+.about {
+    margin: 0 15px;
+    padding-bottom: 20px;
+}
+
+.center-grid {
+    width: 100%;
+    border-top: 1px dashed black;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-flow: wrap;
+}
+
+h2, p {
+    margin: 15px 0;
+}
+
+img { padding: 0;}
+
+.plan, .work, .places, .collab {
+    width: 370px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.learn-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    width: 45%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bottom-section {
+    margin: 0 15px;
+    padding-bottom: 20px;
 }
